@@ -21,7 +21,7 @@ class used_car(car_class):
 @cars_api.get("/")
 def home_root():
     return {"Message":"This is the root, please visit 127.0.0.1:8000/docs"}
-"""
+
 @cars_api.post("/newcar")
 def new_incoming(car:car_class):
     car.register_num=random.randrange(0,999999)
@@ -96,4 +96,3 @@ def car_data_update(register_to_update:int,update_car:car_class):
 
 
 
-"""
