@@ -44,7 +44,7 @@ def CREATE_A_RANDOM_CAR():
     car=car_class(mark=random.choice(mark_list),manufacture_year=myea,color=random.choice(color_list))
     car.register_num=random.randrange(0,999999)
     CARS.append(car)
-    return {"Message":"Random car whit register number: "+str(car.register_num)+" has been received"}
+    return {"Message":"Random car with register number: "+str(car.register_num)+" has been received"}
     
 @cars_api.get("/cars")
 def stock():
